@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Music streaming survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="survey-part">
+      <h1 id="title">Music Streaming Survey</h1>
+      <p id="description">Please take a moment to fill out our music streaming survey</p>
+    </div>
+
+    <div class="survey-part">
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Name 
+            <input required id="name" type="text" placeholder="Enter your name" /></label>
+          <label id="email-label" for="email">Email 
+            <input required id="email" type="email" placeholder="Enter your email" /></label>
+          <label id="number-label" for="number">Age<small> (optional)</small> 
+            <input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+        </div>
+
+        <div class="survey-part">
+          <p>How did you hear about our survey?</p>
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>Facebook</option>
+            <option>Twitter</option>
+            <option>Reddit</option>
+            <option>Other</option>
+          </select>
+        </div>
+        
+        <div class="survey-part">
+          <p>What is your preferred streaming service?</p>
+          <label for="spotify"><input value="spotify" id="spotify" name="preferred" type="radio" /> Spotify</label>
+          <label for="pandora"><input value="pandora" id="pandora" name="preferred" type="radio" /> Pandora</label>
+          <label for="youtube"><input value="youtube" id="youtube" name="preferred" type="radio" /> Youtube</label>
+        </div>
+
+        <div class="survey-part">
+          <p>Where do you use your preferred streaming service?</p>
+          <label><input value="home" type="checkbox" /> Home</label>
+          <label><input value="work" type="checkbox" /> Work</label>
+          <label><input value="car" type="checkbox" /> Car</label>
+        </div>
+
+        <div class="survey-part" id="text">
+          <p>How could your preferred streaming service improve?</p>
+          <textarea rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+        </div>
+        
+        
+        <input id="submit" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
